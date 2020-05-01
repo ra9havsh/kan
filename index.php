@@ -43,15 +43,15 @@
         <ul>
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li class="drop-down"><a href="">Product</a>
+          <li class="drop-down"><a href="product.php">Product</a>
             <ul>
-              <li><a href="#">Clinical Diagnostics</a></li>
-              <li><a href="#">Life Science Research</a></li>
-              <li><a href="#">Clinical Diagnostics</a></li>
+              <li><a href="product.php">Clinical Diagnostics</a></li>
+              <li><a href="product.php">Life Science Research</a></li>
+              <li><a href="product.php">Clinical Diagnostics</a></li>
             </ul>
           </li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>         
+          <li><a href="#">Gallery</a></li>         
           <li><a href="#contact">Contact</a></li>
           <li>
             <form class="form-inline d-flex justify-content-center md-form form-sm mt-1">
