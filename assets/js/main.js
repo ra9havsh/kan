@@ -202,4 +202,21 @@
     mirror: false
   });
 
+  //specific-product page make the product item sticky
+  var product_item = document.querySelector('.specific-product .product-item');
+  var product_description = document.querySelector('.specific-product .product-description');
+  var desPosition = product_description.getBoundingClientRect();
+  var isAdded = false;
+  
+  window.addEventListener('scroll', function() {
+    var screen_offset_bottom = window.pageYOffset+(window.screen.height-300);
+    if (screen_offset_bottom >= desPosition.height) {
+        product_item.style.position = 'absolute';
+        isAdded = true;
+    } else if (screen_offset_bottom < desPosition.height) {
+        product_item.style.position = 'fixed';
+        isAdded = false;
+    }
+});
+
 })(jQuery);

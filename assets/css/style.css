@@ -1018,7 +1018,7 @@ section {
 
 
 /*--------------------------------------------------------------
-# Product
+# Products-Page
 --------------------------------------------------------------*/
 
 #products-page{
@@ -1133,4 +1133,54 @@ section {
   {
     font-size: 1.2em;
   }
+}
+
+
+/*--------------------------------------------------------------
+# Specific Products
+--------------------------------------------------------------*/
+
+#specific-product{
+  margin-top: 20px;
+  padding-bottom: 0px;
+  background-color: white;
+}
+
+#specific-product > div{
+  margin-top: 50px;
+}
+
+.specific-product .product-item {
+ height: 100vh;
+ overflow: hidden;
+ z-index: 1;
+ text-align: center;
+ position: fixed;
+ top: 150px;
+ transition: 0.3s;
+}
+
+.specific-product .product-description{
+  position: relative;
+  right: 0;
+}
+
+.specific-product .product-description p, .specific-product .product-description li{
+  text-align: justify;
+}
+
+.specific-product .product-item p{
+  text-align: left;
+}
+ 
+.specific-product .product-item .product-img {
+  width: 100%;
+  border: 6px solid #fff;
+}
+
+.specific-product h4 {
+ font-size: 2em;
+ font-weight: bold;
+ color: black;
+ margin-bottom: 20px;
 }

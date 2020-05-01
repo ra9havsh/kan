@@ -68,64 +68,110 @@
   <main id="main">
 
   <!-- ======= Products Section ======= -->
-  <section id="products-page" class="products-page section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Product Type</h2>
+  <section id="specific-product" class="specific-product section-bg">
+      <div class="container d-flex">
+        <div class="col-sm-4 product-item justify-content-center align-items-center" data-aos="fade-down" data-aos-delay="200">
+            <img src="assets/img/products/product5.jpg" class="product-img" alt="">
+            <p>
+              <strong>Category:</strong> 
+              Life Science Research         
+            </p>
+            <p><strong>In Stock:</strong> Yes</p>
+                    
+            <p>
+              <a href="javascript:void(0);" class="btn btn-primary" data-toggle="modal" data-target="#productenquiryform">Send Enquiry</a>
+            </p>
         </div>
-
-        <div data-aos="fade-up" data-aos-delay="200">
-
-          <a href="specific_product.php">
-            <div class="product-wrap">
-              <div class="product-item justify-content-center">
-                <img src="assets/img/products/product1.jpg" class="product-img" alt="">
-                <h4>100 bp DNA Ladder Ready to Load</h4>
-              </div>
-            </div>
-          </a>
-                
-          <a href="specific_product.php">
-            <div class="product-wrap">
-              <div class="product-item justify-content-center">
-                <img src="assets/img/products/product2.jpg" class="product-img" alt="">
-                <h4>T100™ Thermal Cycler</h4>
-              </div>
-            </div>
-          </a>
+        <div class="col-sm-5 placeholder"></div>
+        <div class="col-sm-7 product-description">
+          <h4>100 bp DNA Ladder Ready to Load</h4>
           
-          <a href="specific_product.php">
-            <div class="product-wrap">
-              <div class="product-item justify-content-center">
-                <img src="assets/img/products/product3.jpg" class="product-img" alt="">
-                <h4>T100™ Thermal Cycler</h4>
-              </div>
-            </div>
-          </a>  
-                
-          <a href="specific_product.php">
-            <div class="product-wrap">
-              <div class="product-item justify-content-center">
-                <img src="assets/img/products/product4.jpg" class="product-img" alt="">
-                <h4>ANAEROBIC JAR SYSTEMS</h4>
-              </div>
-            </div>
-          </a>
-                
-          <a href="specific_product.php">
-            <div class="product-wrap">
-              <div class="product-item justify-content-center">
-                <img src="assets/img/products/product5.jpg" class="product-img" alt="">
-                <h4>MRI unit has two open scanners.</h4>
-              </div>
-            </div>
-          </a>
+          <p>The T100 thermal cycler is a small thermal cycler offering a comprehensive set of convenient features in a small footprint. This compact thermal cycler features an intuitive touch-screen user interface to make running PCR easy. Thermal gradient technology allows you to quickly optimize your reaction in a single run. With its robust design, the T100 system is a reliable personal thermal cycler that delivers exceptional performance for years — test drive the T100 thermal cycler today</p>
+          <p><strong>Features and Benefits of the T100 Thermal Cycler</strong></p>
+          <ul>
+            <li><strong>Intuitive touch screen</strong> — easy programming using a large color touch screen and intuitive interface</li>
+            <li><strong>Consistent results</strong> — robust design ensures effective and consistent performance run to run</li>
+            <li><strong>Easy optimization</strong> — this gradient thermal cycler allows fast PCR optimization using a unique thermal gradient</li>
+            <li><strong>Easy protocol management</strong> — protocols can be organized using personalized folders or a USB flash drive</li>
+            <li><strong>Small space-saving footprint</strong> — the T100 is a compact thermal cycler that fits in any laboratory</li>
+          </ul>
+          
+          <p><strong>Applications and Uses for the T100 Thermal Cycler</strong></p>
+          
+        <ul>
+            <li>Nucleic acid amplification (PCR)</li>
+            <li>Gene cloning and analysis</li>
+            <li>Gene expression analysis</li>
+            <li>Mutational analysis</li>
+            <li>Cycle sequencing</li>
+        </ul>
+        
+        <p><strong>Specifications</strong></p>
 
+        
+        <table id="tablepress-12" class="tablepress tablepress-id-12">
+        
+          <tbody class="row-hover">
+              <tr class="row-1 odd">
+                <td class="column-1"><strong>Thermal Cycler</strong></td><td class="column-2"></td>
+              </tr>
+              <tr class="row-2 even">
+                <td class="column-1">Sample capacity</td><td class="column-2">96 x 0.2 ml tubes, 0.2 ml tube strips, or 1 x 96-well plate</td>
+              </tr>
+              <tr class="row-3 odd">
+                <td class="column-1">Maximum ramp rate, °C/sec</td><td class="column-2">4</td>
+              </tr>
+              <tr class="row-4 even">
+                <td class="column-1">Average ramp rate, °C/sec	</td><td class="column-2">2.5</td>
+              </tr>
+              <tr class="row-5 odd">
+                <td class="column-1">Temperature range	</td><td class="column-2">4–100°C<br>
+              </td>
+              </tr>
+              <tr class="row-6 even">
+                <td class="column-1">Temperature accuracy</td><td class="column-2">±0.5°C of programmed target</td>
+              </tr>
+              <tr class="row-7 odd">
+                <td class="column-1">Temperature uniformity	</td><td class="column-2">±0.5°C well-to-well within 30 sec of arrival at target temperature<br>
+              </td>
+              </tr>
+              <tr class="row-8 even">
+                <td class="column-1">Input power	</td><td class="column-2">100–150 VAC, 50–60 Hz; 220–240 VAC, 50–60 Hz; 700 W maximum<br>
+              </td>
+              </tr>
+              <tr class="row-9 odd">
+                <td class="column-1">Display</td><td class="column-2">5.7'' VGA color touch screen</td>
+              </tr>
+              <tr class="row-10 even">
+                <td class="column-1">Port</td><td class="column-2">1 USB A</td>
+              </tr>
+              <tr class="row-11 odd">
+                <td class="column-1">Memory</td><td class="column-2">500 typical programs; unlimited with USB flash drive expansion</td>
+              </tr>
+              <tr class="row-12 even">
+                <td class="column-1">Dimensions (W x D x H)	</td><td class="column-2">26 x 47 x 23 cm (10 x 18 x 9'')<br>
+              </td>
+              </tr>
+              <tr class="row-13 odd">
+                <td class="column-1">Weight</td><td class="column-2">9 kg (20 lb)</td>
+              </tr>
+              <tr class="row-14 even">
+                <td class="column-1"><strong>Gradient</strong></td><td class="column-2"></td>
+              </tr>
+              <tr class="row-15 odd">
+                <td class="column-1">Gradient range</td><td class="column-2">30–100°C</td>
+              </tr>
+              <tr class="row-16 even">
+                <td class="column-1">Temperature differential range</td><td class="column-2">1–25°C</td>
+              </tr>
+            </tbody>
+          </table>
+            <!-- #tablepress-12 from cache -->
+            <p>More Information:&nbsp;<a class="link" href="http://www.bio-rad.com/en-in/product/t100-thermal-cycler" target="_blank" rel="noopener">Find More</a></p>
+            <p></p>
         </div>
-
       </div>
-    </section><!-- End Products Section -->
+  </section><!-- End Products Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -250,7 +296,26 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  
+  <script>
+      //specific-product page make the product item sticky
+      var product_item = document.querySelector('.specific-product .product-item');
+      var itemPosition = product_item.getBoundingClientRect();
+      var product_description = document.querySelector('.specific-product .product-description');
+      var desPosition = product_description.getBoundingClientRect();
 
+      window.addEventListener('scroll', function() {
+        var screen_offset_bottom = window.pageYOffset+(window.screen.height-270);
+        
+        if (screen_offset_bottom >= desPosition.height) {
+            product_item.style.display = 'none';
+            isAdded = true;
+        } else if (screen_offset_bottom < desPosition.height) {
+            product_item.style.display = 'block';
+            isAdded = false;
+        }
+      });
+  </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
