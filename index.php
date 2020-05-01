@@ -67,9 +67,9 @@
 
     <!-- ======= Slider Section ======= -->
     <section id="slider" class="slider section-bg">
-    <div class="container">
+    <div>
 
-      <div class="owl-carousel slider-carousel" data-aos="fade-up" data-aos-delay="200">
+      <div class="owl-carousel slider-carousel">
 
         <div class="slider-wrap">
           <div class="slider-item">
@@ -186,11 +186,7 @@
           </div>
           <div class="col-lg-5 order-3 order-lg-1" data-aos="fade-right" data-aos-delay="200">
             <p class="text-justify">
-              Applied Biological Tools Trader incorporated as per existing rule of the Government of Nepal on April 2008, specializes from dealing with 
-              tools and equipment, marketing, diagnostic kits ,Maintenance and Services of the system as per customer requirement. Our business firm is 
-              the journey we believe our business needs to take to reach its objectives and written as a simple document. This will help you guide about 
-              business firm and will include activities such as marketing and financial forecasts. We are the team of diversified members moving ahead 
-              in order to fulfill our accomplished goal...
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum....
             </p>
             <button class="btn btn-read-more">Read More</button>
           </div>
@@ -484,7 +480,6 @@
   <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
