@@ -79,7 +79,7 @@
             <p><strong>In Stock:</strong> Yes</p>
                     
             <p>
-              <a href="javascript:void(0);" class="btn btn-primary" data-toggle="modal" data-target="#productenquiryform">Send Enquiry</a>
+              <a href="javascript:void(0);" class="btn btn-primary send-enquiry" data-toggle="modal" data-target="#productenquiryform">Send Enquiry</a>
             </p>
         </div>
         <div class="col-sm-5 placeholder"></div>
@@ -299,20 +299,26 @@
   
   <script>
       //specific-product page make the product item sticky
+      
+      var enquiry_button = document.querySelector('.specific-product .send-enquiry');
       var product_item = document.querySelector('.specific-product .product-item');
-      var itemPosition = product_item.getBoundingClientRect();
       var product_description = document.querySelector('.specific-product .product-description');
-      var desPosition = product_description.getBoundingClientRect();
-
+      var offset = product_item.offsetTop+enquiry_button.offsetTop+enquiry_button.offsetHeight+30;
       window.addEventListener('scroll', function() {
-        var screen_offset_bottom = window.pageYOffset+(window.screen.height-270);
-        
-        if (screen_offset_bottom >= desPosition.height) {
-            product_item.style.display = 'none';
-            isAdded = true;
-        } else if (screen_offset_bottom < desPosition.height) {
-            product_item.style.display = 'block';
-            isAdded = false;
+    
+        var screen_offset_bottom = product_description.offsetTop+product_description.offsetHeight;
+        var item_offset_bottom = offset+window.pageYOffset;
+        // console.log('w '+window.pageYOffset);
+        // console.log('i '+item_offset_bottom);
+        // console.log('s '+screen_offset_bottom);
+
+        var abs_pos = (product_description.offsetTop+product_description.offsetHeight) - (offset-product_description.offsetTop);       
+        if (item_offset_bottom < screen_offset_bottom) {
+            product_item.style.position = 'fixed';
+            product_item.style.top = '150px';
+        } else if (item_offset_bottom >= screen_offset_bottom) {
+            product_item.style.position = 'absolute';
+            product_item.style.top = abs_pos+'px';
         }
       });
   </script>
