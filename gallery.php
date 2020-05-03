@@ -67,57 +67,108 @@
 
   <main id="main">
 
-  <!-- ======= Products Section ======= -->
-  <section id="products-page" class="products-page section-bg">
+  <!-- ======= Gallery Section ======= -->
+  <section id="gallery" class="gallery section-bg">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Product Type</h2>
+        <div class="section-title">
+          <h2>Gallery</h2>
         </div>
 
-        <div data-aos="fade-up" data-aos-delay="200">
+        
+      <div class="col-12 text-center">
+        <label class="switch">
+          <input id="gallery-type" onchange="changeGalleryType()" type="checkbox">
+          <span class="slider round">PHOTOS &nbsp;&nbsp;&nbsp; VIDEOS</span>
+        </label>
+      </div>
+      
+      <div id="gallery-photos" data-aos="fade-up" data-aos-delay="200">
 
-          <a href="specific_product.php">
-            <div class="product-wrap">
-              <div class="product-item justify-content-center">
-                <img src="assets/img/products/product1.jpg" class="product-img" alt="">
-                <h4>100 bp DNA Ladder Ready to Load</h4>
+          <h2 class="text-center">PHOTOS</h2>
+
+          <a href="#">
+            <div class="gallery-wrap">
+              <div class="gallery-item justify-content-center">
+                <img src="assets/img/products/product1.jpg" class="gallery-img" alt="">
               </div>
             </div>
           </a>
                 
-          <a href="specific_product.php">
-            <div class="product-wrap">
-              <div class="product-item justify-content-center">
-                <img src="assets/img/products/product2.jpg" class="product-img" alt="">
-                <h4>T100™ Thermal Cycler</h4>
+          <a href="#">
+            <div class="gallery-wrap">
+              <div class="gallery-item justify-content-center">
+                <img src="assets/img/products/product2.jpg" class="gallery-img" alt="">
               </div>
             </div>
           </a>
           
-          <a href="specific_product.php">
-            <div class="product-wrap">
-              <div class="product-item justify-content-center">
-                <img src="assets/img/products/product3.jpg" class="product-img" alt="">
-                <h4>T100™ Thermal Cycler</h4>
+          <a href="#">
+            <div class="gallery-wrap">
+              <div class="gallery-item justify-content-center">
+                <img src="assets/img/products/product3.jpg" class="gallery-img" alt="">
               </div>
             </div>
           </a>  
                 
-          <a href="specific_product.php">
-            <div class="product-wrap">
-              <div class="product-item justify-content-center">
-                <img src="assets/img/products/product4.jpg" class="product-img" alt="">
-                <h4>ANAEROBIC JAR SYSTEMS</h4>
+          <a href="#">
+            <div class="gallery-wrap">
+              <div class="gallery-item justify-content-center">
+                <img src="assets/img/products/product4.jpg" class="gallery-img" alt="">
               </div>
             </div>
           </a>
                 
-          <a href="specific_product.php">
-            <div class="product-wrap">
-              <div class="product-item justify-content-center">
-                <img src="assets/img/products/product5.jpg" class="product-img" alt="">
-                <h4>MRI unit has two open scanners.</h4>
+          <a href="#">
+            <div class="gallery-wrap">
+              <div class="gallery-item justify-content-center">
+                <img src="assets/img/products/product5.jpg" class="gallery-img" alt="">
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <div id="gallery-videos" class="box-hidden box-transition">
+
+          <h2 class="text-center">VIDEOS</h2>
+
+          <a href="#">
+            <div class="gallery-wrap">
+              <div class="gallery-item justify-content-center">
+                 <iframe src="https://www.youtube.com/embed/a6AsyCpG4Mg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </a>
+                
+          <a href="#">
+            <div class="gallery-wrap">
+              <div class="gallery-item justify-content-center">
+                <iframe src="https://www.youtube.com/embed/Qvy0nJamfqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="gallery-wrap">
+              <div class="gallery-item justify-content-center">
+                <iframe src="https://www.youtube.com/embed/W3OIjQ5bkmQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </a>  
+                
+          <a href="#">
+            <div class="gallery-wrap">
+              <div class="gallery-item justify-content-center">
+              <iframe src="https://www.youtube.com/embed/XaLN_WWVqUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </a>
+                
+          <a href="#">
+            <div class="gallery-wrap">
+              <div class="gallery-item justify-content-center">
+                <iframe src="https://www.youtube.com/embed/AMRGmAh2NTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </a>
@@ -125,7 +176,7 @@
         </div>
 
       </div>
-    </section><!-- End Products Section -->
+    </section><!-- End Gallery Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -251,6 +302,40 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
+  <!-- Check the Gallery Type -->
+  <script>
+    function changeGalleryType() {
+      // Get the checkbox
+      var checkBox = document.getElementById("gallery-type");
+      
+      var gallery_photos = document.getElementById("gallery-photos");
+      var gallery_videos = document.getElementById("gallery-videos");
+
+      // If the checkbox is checked, display the output text
+      if (checkBox.checked == true){
+        gallery_photos.classList.add('box-transition');
+        setTimeout(function() { 
+          gallery_photos.classList.add('box-hidden');
+        }, 500);
+        
+        gallery_videos.classList.remove('box-hidden');
+        setTimeout(function() { 
+          gallery_videos.classList.remove('box-transition');
+        }, 500);
+      } else {
+        gallery_videos.classList.add('box-transition');
+        setTimeout(function() { 
+          gallery_videos.classList.add('box-hidden');
+          gallery_photos.classList.remove('box-hidden');
+        }, 500);
+
+        setTimeout(function() { 
+          gallery_photos.classList.remove('box-transition');
+        }, 700);
+      }
+    }
+  </script>
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

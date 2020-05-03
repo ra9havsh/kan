@@ -51,7 +51,7 @@
             </ul>
           </li>
           <li><a href="index.php#services">Services</a></li>
-          <li><a href="#">Gallery</a></li>         
+          <li><a href="gallery.php">Gallery</a></li>         
           <li><a href="#contact">Contact</a></li>
           <li>
             <form class="form-inline d-flex justify-content-center md-form form-sm mt-1">
