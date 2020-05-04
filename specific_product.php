@@ -69,8 +69,9 @@
 
   <!-- ======= Products Section ======= -->
   <section id="specific-product" class="specific-product section-bg">
-      <div class="container d-flex">
-        <div class="col-sm-4 product-item justify-content-center align-items-center" data-aos="fade-down" data-aos-delay="200">
+      <div class="container">
+        <div class="row">
+        <div class="col-sm-4 col-12 product-item justify-content-center align-items-center" data-aos="fade-down" data-aos-delay="200">
             <img src="assets/img/products/product5.jpg" class="product-img" alt="">
             <p>
               <strong>Category:</strong> 
@@ -83,7 +84,7 @@
             </p>
         </div>
         <div class="col-sm-5 placeholder"></div>
-        <div class="col-sm-7 product-description">
+        <div class="col-sm-7 col-12 product-description">
           <h4>100 bp DNA Ladder Ready to Load</h4>
           
           <p>The T100 thermal cycler is a small thermal cycler offering a comprehensive set of convenient features in a small footprint. This compact thermal cycler features an intuitive touch-screen user interface to make running PCR easy. Thermal gradient technology allows you to quickly optimize your reaction in a single run. With its robust design, the T100 system is a reliable personal thermal cycler that delivers exceptional performance for years — test drive the T100 thermal cycler today</p>
@@ -170,6 +171,7 @@
             <p>More Information:&nbsp;<a class="link" href="http://www.bio-rad.com/en-in/product/t100-thermal-cycler" target="_blank" rel="noopener">Find More</a></p>
             <p></p>
         </div>
+            </div>
       </div>
   </section><!-- End Products Section -->
 
@@ -312,14 +314,17 @@
         // console.log('i '+item_offset_bottom);
         // console.log('s '+screen_offset_bottom);
 
-        var abs_pos = (product_description.offsetTop+product_description.offsetHeight) - (offset-product_description.offsetTop);       
-        if (item_offset_bottom < screen_offset_bottom) {
-            product_item.style.position = 'fixed';
-            product_item.style.top = '150px';
-        } else if (item_offset_bottom >= screen_offset_bottom) {
-            product_item.style.position = 'absolute';
-            product_item.style.top = abs_pos+'px';
+        if(window.innerWidth > 575){
+          var abs_pos = (product_description.offsetTop+product_description.offsetHeight) - (offset-product_description.offsetTop);       
+          if (item_offset_bottom < screen_offset_bottom) {
+              product_item.style.position = 'fixed';
+              product_item.style.top = '150px';
+          } else if (item_offset_bottom >= screen_offset_bottom) {
+              product_item.style.position = 'absolute';
+              product_item.style.top = abs_pos+'px';
+          }
         }
+        
       });
   </script>
   <!-- Template Main JS File -->
